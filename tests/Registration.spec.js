@@ -37,7 +37,7 @@ test('Verify Registration Page fields and enter values', async ({ page }) => {
   await regPage.firstName.fill(firstName);
   await regPage.lastName.fill(lastName);
   await regPage.address.fill('123 main street');
-  await regPage.city.fill('chennai');
+  await regPage.city.fill('Chennai');
   await regPage.state.fill('TamilNadu');
   await regPage.zipCode.fill('600023');
   await regPage.phone.fill('9080238670');

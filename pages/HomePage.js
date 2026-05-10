@@ -9,11 +9,11 @@ export const HomePage = {
   lblSolutions: '//li[@class="Solutions"]',
 
   // Navigation Buttons
-  btnAboutUs: '(//a[@href="about.htm" and text()="About Us"])[1]',
-  btnService: '(//a[@href="services.htm" and text()="Services"])[1]',
-  btnProducts: '(//a[@href="http://www.parasoft.com/jsp/products.jsp" and text()="Products"])[1]',
-  btnLocations: '(//a[@href="http://www.parasoft.com/jsp/pr/contacts.jsp" and text()="Locations"])[1]',
-  btnAdminPage: '(//a[@href="admin.htm" and text()="Admin Page"])[1]',
+  btnAboutUs: '(//a[text()="About Us"])[1]',
+  btnService: '(//a[text()="Services"])[1]',
+  btnProducts: '(//a[text()="Products"])[1]',
+  btnLocations: '(//a[text()="Locations"])[1]',
+  btnAdminPage: '(//a[text()="Admin Page"])[1]',
 
   // Login Section
   lblCustomerLogin: '//h2[text()="Customer Login"]',
@@ -26,9 +26,9 @@ export const HomePage = {
   Register: '//a[text()="Register"]',
 
   // Header Links
-  btn_Home: '//a[@href="index.htm" and text()="home"]',
-  btn_About: '//a[@href="about.htm" and text()="about"]',
-  btn_Contact: '//a[@href="contact.htm" and text()="contact"]',
+  btn_Home: '(//a[text()="home"])[1]',
+  btn_About: '(//a[text()="about"])[1]',
+  btn_Contact: '(//a[text()="contact"])[1]',
 
   // Services Section
   lbl_AtmServices: '//li[@class="captionone" and text()="ATM Services"]',
@@ -41,14 +41,14 @@ export const HomePage = {
   lnk_BillPay: '//ul[@class="servicestwo"]//a[text()="Bill Pay"]',
   lnk_AccountHistory: '//ul[@class="servicestwo"]//a[text()="Account History"]',
   lnk_Online_TransferFund: '//ul[@class="servicestwo"]//a[text()="Transfer Funds"]',
-  lnk_Service_ReadMore: '//a[@href="services.htm" and text()="Read More"]',
+  lnk_Service_ReadMore: '(//a[text()="Read More"])[1]',
 
   // News Section
   lbl_LatestNews: '//h4[text()="Latest News"]',
   lnk_News_link1: '//a[text()="ParaBank Is Now Re-Opened"]',
   lnk_News_link2: '//a[text()="New! Online Bill Pay"]',
   lnk_News_link3: '//a[text()="New! Online Account Transfers"]',
-  lnk_News_ReadMore: '//a[@href="news.htm" and text()="Read More"]',
+  lnk_News_ReadMore: '(//a[text()="Read More"])[2]',
 
   // Footer Links
   lnk_Footer_Home: '//div[@id="footerPanel"]//a[text()="Home"]',

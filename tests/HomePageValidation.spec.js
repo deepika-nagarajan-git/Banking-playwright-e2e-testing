@@ -30,8 +30,17 @@ test('Verify all Home Page objects are visible', async ({ page }) => {
   await expect(page.locator(HomePage.btn_Home)).toBeVisible();
   await expect(page.locator(HomePage.btn_About)).toBeVisible();
   await expect(page.locator(HomePage.btn_Contact)).toBeVisible();
+ 
+  // Verify dimensions of ATM image
+  const services = page.locator('#rightPanel span.services');
+  await expect(services).toHaveCSS('width', '96px');
+  await expect(services).toHaveCSS('height', '77px');
 
-  // Services section
+  // Verify padding and margin
+  await expect(services).toHaveCSS('padding', '46px 0px 0px 75px');
+  await expect(services).toHaveCSS('margin', '0px 0px 5px');
+
+   // Services section
   await expect(page.locator(HomePage.lbl_AtmServices)).toBeVisible();
   await expect(page.locator(HomePage.lnk_WithdrawFunds)).toBeVisible();
   await expect(page.locator(HomePage.lnk_TransferFunds)).toBeVisible();
@@ -43,6 +52,17 @@ test('Verify all Home Page objects are visible', async ({ page }) => {
   await expect(page.locator(HomePage.lnk_AccountHistory)).toBeVisible();
   await expect(page.locator(HomePage.lnk_Online_TransferFund)).toBeVisible();
   await expect(page.locator(HomePage.lnk_Service_ReadMore)).toBeVisible();
+
+  //Verifying dimensions of Nws image
+  const heading = page.locator('#rightPanel h4');
+
+  // Dimensions
+  await expect(heading).toHaveCSS('width', '96px');
+  await expect(heading).toHaveCSS('height', '77px');
+
+  // Spacing
+  await expect(heading).toHaveCSS('padding', '46px 0px 0px 75px');
+  await expect(heading).toHaveCSS('margin', '0px 0px 5px');
 
   // News section
   await expect(page.locator(HomePage.lbl_LatestNews)).toBeVisible();

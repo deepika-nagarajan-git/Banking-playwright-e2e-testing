@@ -53,7 +53,7 @@ test('Verify all Home Page objects are visible', async ({ page }) => {
   await expect(page.locator(HomePage.lnk_Online_TransferFund)).toBeVisible();
   await expect(page.locator(HomePage.lnk_Service_ReadMore)).toBeVisible();
 
-  //Verifying dimensions of Nws image
+  //Verifying dimensions of News image
   const heading = page.locator('#rightPanel h4');
 
   // Dimensions
